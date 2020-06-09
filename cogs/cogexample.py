@@ -17,4 +17,4 @@ class examplecog(commands.Cog):
         await ctx.send("This is an example of a command in a cog!")
       
 def setup(bot):
-  bot.add_cog(fun(bot))
+  bot.add_cog(examplecog(bot))
