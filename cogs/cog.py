@@ -3,7 +3,7 @@ from discord.ext import commands
 
 class cog(commands.Cog):
 
-commands.is_owner()
+@commands.is_owner()
 @client.command()
 async def load(ctx, extension):
     client.load_extension(f'cogs.{extension}')
