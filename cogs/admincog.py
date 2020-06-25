@@ -7,19 +7,19 @@ class Admin(commands.Cog):
     
     @commands.command()
     @commands.is_owner()
-    async def load(ctx, extension):
+    async def load(self, ctx, extension):
         client.load_extension(f'cogs.{extension}')
         await ctx.send(f":white_check_mark: Successfully loaded the cog `{extension}`")
 
     @commands.command()
     @commands.is_owner()
-    async def unload(ctx, extension):
+    async def unload(self, ctx, extension):
         client.unload_extension(f'cogs.{extension}')
         await ctx.send(f":white_check_mark: Successfully unloaded the cog `{extension}`")
 
     @commands.command()
     @commands.is_owner()
-    async def reload(ctx, extension):
+    async def reload(self, ctx, extension):
         client.unload_extension(f'cogs.{extension}')
         client.load_extension(f'cogs.{extension}')
         await ctx.send(f":white_check_mark: Successfully reloaded the cog `{extension}`")
