@@ -1,7 +1,7 @@
 import discord
 from discord.ext import commands
 
-class Admin(commands.Cog):
+class owner(commands.Cog):
     def __init__(self, client):
         self.client = client
     
@@ -25,4 +25,4 @@ class Admin(commands.Cog):
         await ctx.send(f":white_check_mark: Successfully reloaded the cog `{extension}`")
     
 def setup(bot):
-  bot.add_cog(Admin(bot))
+  bot.add_cog(owner(bot))
