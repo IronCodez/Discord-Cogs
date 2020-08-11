@@ -2,7 +2,7 @@ import discord, os
 from discord.ext import commands
 
 client = commands.Bot(command_prefix = "prefix")
-token = "token"
+token = os.environ['TOKEN']
 
 for filename in os.listdir('./cogs'):
     if filename.endswith('.py'):
