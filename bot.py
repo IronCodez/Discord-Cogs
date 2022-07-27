@@ -1,8 +1,8 @@
-import discord
+import discord, os
 from discord.ext import commands
 
-client = discord.Client(command_prefix=None, intents=None)
-TOKEN = "your_token_here"
+client = discord.Client(command_prefix=None, index=None)
+TOKEN = ""
 
 async def load_extensions():
     for filename in os.listdir("./cogs"):
@@ -13,4 +13,4 @@ async def load_extensions():
 async def main():
     async with client:
         await load_extensions()
-        await client.start(TOKEN))
+        await client.start(TOKEN)
