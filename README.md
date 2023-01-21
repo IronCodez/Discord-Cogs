@@ -16,9 +16,9 @@ py -3 -m pip install -U discord.py``
 Full libary w/ voice support
 
 ``# Linux/macOS
-python3 -m pip install -U "discord.py[voice]"
+python3 -m pip install -U "discord.py[voice]``
 
-# Windows
+``# Windows
 py -3 -m pip install -U discord.py[voice]``
 
 Development Version 
