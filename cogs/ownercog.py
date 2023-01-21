@@ -24,5 +24,5 @@ class owner(commands.Cog):
         self.client.load_extension(f'cogs.{extension}')
         await ctx.send(f":white_check_mark: Successfully reloaded the cog `{extension}`")
     
-def setup(bot):
-  bot.add_cog(owner(bot))
+async def setup(bot):
+    await bot.add_cog(owner(bot))
