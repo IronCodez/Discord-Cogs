@@ -1,4 +1,4 @@
-# Discord-Cogs
+Dicsord Cogs in [discord.py](https://github.com/Rapptz/discord.py)
 This repository will show an example of a discord.py cog.
 
 # How do I install (discord.py)[https://github.com/Rapptz/discord.py]?
