@@ -7,7 +7,7 @@ class botinfo(commands.Cog):
     def __init__(self, client):
         self.client = client
 
-    @app_commands.command(name="command_name", description=f"command description")
+    @app_commands.command(name="command_name", description="command description")
     async def command_name(self, interaction: discord.Interaction) -> None:
       interaction.send_message("This is an example of a slash (/) command in a cog.")
 
