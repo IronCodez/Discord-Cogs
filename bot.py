@@ -3,7 +3,7 @@ import os
 import asyncio
 from discord.ext import commands
 
-client = discord.Client(command_prefix=None, index=None)
+client = discord.Client(command_prefix=None, intents=None)
 TOKEN = ""
 
 async def load_extensions():
