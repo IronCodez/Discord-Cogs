@@ -1,4 +1,4 @@
-import discord, os
+import discord, os, asyncio
 from discord.ext import commands
 
 client = discord.Client(command_prefix=None, index=None)
@@ -14,3 +14,5 @@ async def main():
     async with client:
         await load_extensions()
         await client.start(TOKEN)
+
+asyncio.run(main())
